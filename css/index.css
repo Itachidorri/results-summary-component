@@ -20,11 +20,15 @@
 
 body{
   color: lightgrey;
-  font-family: 'HankenGrotesk';
+  font-family: 'HankenGrotesk', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
 }
 
 h1{
     font-size: 18px;
+}
+
+p{
+  font-size:14px;
 }
 
 /*handy utility classes*/
@@ -84,6 +88,7 @@ h1{
 .standout-txt{
   font-size: 4em;
   color: white;
+  font-weight: bold;
 }
 
 .remarks h2{
@@ -122,25 +127,25 @@ h1{
 .summary-item:nth-child(1){
   background-color: rgba(255, 87, 87, .09);
   color: rgba(255, 87, 87, 1);
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .summary-item:nth-child(2){
   background-color: rgba(255, 176, 31,.09);
   color: rgba(255, 176, 31,1);
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .summary-item:nth-child(3){
   background-color: rgba(82, 250, 96,.08);
   color: rgba(68, 212, 80,1);
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .summary-item:nth-child(4){
   background-color: rgba(216, 213, 240,.3);
   color: rgba(106, 76, 199,.8);
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .summary-item-ability{
@@ -171,7 +176,7 @@ button{
 }
 
 button:hover{
-  background-image: linear-gradient(rgba(110, 67, 240,1), rgba(54, 57, 201,1));;
+  background-image: linear-gradient(rgba(110, 67, 240,1), rgba(54, 57, 201,1));
 }
 
 
