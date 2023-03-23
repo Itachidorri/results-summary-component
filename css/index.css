@@ -19,16 +19,12 @@
 }
 
 body{
-  color: white;
+  color: lightgrey;
   font-family: 'HankenGrotesk';
 }
 
 h1{
     font-size: 18px;
-}
-
-h1, p{
-  color: lightgrey;
 }
 
 /*handy utility classes*/
@@ -65,10 +61,7 @@ h1, p{
 
 .summary-item p{
   color: grey;
-}
-
-.sub-container-2 h3{
-  color: black;
+  font-size: 16px;
 }
 
 .sub-container-1{
@@ -108,8 +101,8 @@ h1, p{
 }
 
 .sub-container-2 h2{
-  color: black;
   font-size: 18px;
+  color: black;
 }
 
 .summary-items{
@@ -127,18 +120,26 @@ h1, p{
 
 .summary-item:nth-child(1){
   background-color: rgba(255, 87, 87, .09);
+  color: rgba(255, 87, 87, 1);
+  font-size: 14px;
 }
 
 .summary-item:nth-child(2){
   background-color: rgba(255, 176, 31,.09);
+  color: rgba(255, 176, 31,1);
+  font-size: 14px;
 }
 
 .summary-item:nth-child(3){
   background-color: rgba(82, 250, 96,.08);
+  color: rgba(68, 212, 80,1);
+  font-size: 14px;
 }
 
 .summary-item:nth-child(4){
   background-color: rgba(216, 213, 240,.3);
+  color: rgba(106, 76, 199,.8);
+  font-size: 14px;
 }
 
 .summary-item-ability{
