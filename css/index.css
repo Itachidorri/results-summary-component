@@ -1,0 +1,181 @@
+/*Resetting all default margin and padding to zero */
+*{
+  margin:0;
+  padding:0;
+}
+
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+/*specifying a new font-family*/
+@font-face{
+  font-family: 'HankenGrotesk';
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf')
+      format('truetype');
+}
+
+body{
+  color: white;
+  font-family: 'HankenGrotesk';
+}
+
+h1{
+    font-size: 18px;
+}
+
+h1, p{
+  color: lightgrey;
+}
+
+/*handy utility classes*/
+.flex{
+  display: flex;
+}
+
+.section-header{
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  max-width: 35rem;
+  border-radius: 20px;
+  box-shadow: .5rem 1rem 3rem rgba(57, 57, 230, 0.2);
+}
+
+/*Selecting all child items of container*/
+.container>*{
+  flex-direction: column;
+  flex: 1;
+  padding: 1.5rem;
+}
+
+.sub-container-1>*{
+  padding-bottom: .5rem;
+}
+
+.sub-container-1 h1{
+  padding-bottom: min(2vh,1rem);
+}
+
+.summary-item p{
+  color: grey;
+}
+
+.sub-container-2 h3{
+  color: black;
+}
+
+.sub-container-1{
+  background-image: linear-gradient(rgba(110, 67, 240,1), rgba(54, 57, 201,1));
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  text-align: center;
+  padding: 1.5rem ;
+}
+
+.score-count{
+  background-image: linear-gradient(rgba(54, 57, 201,1), rgba(110, 67, 240,.1));
+  padding: 1rem;
+  width: 6rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.standout-txt{
+  font-size: 4em;
+  color: white;
+}
+
+.remarks h2{
+  padding: 0.6rem 0;
+}
+
+.remarks{
+  padding: 0 min(2vw,1rem) min(1vh,1rem);
+}
+
+
+/*styling summary section*/
+.sub-container-2{
+  justify-content: space-between;
+}
+
+.sub-container-2 h2{
+  color: black;
+  font-size: 18px;
+}
+
+.summary-items{
+  flex-direction: column ;
+  flex-grow: 1;
+  padding: 1rem 0;
+  gap:1rem;
+}
+
+.summary-items>*{
+  justify-content: space-between;
+  padding: .6rem;
+  border-radius: 5px;
+}
+
+.summary-item:nth-child(1){
+  background-color: rgba(255, 87, 87, .09);
+}
+
+.summary-item:nth-child(2){
+  background-color: rgba(255, 176, 31,.09);
+}
+
+.summary-item:nth-child(3){
+  background-color: rgba(82, 250, 96,.08);
+}
+
+.summary-item:nth-child(4){
+  background-color: rgba(216, 213, 240,.3);
+}
+
+.summary-item-ability{
+  gap:.5rem;
+}
+
+.ability-title{
+  font-size: 16px;
+}
+
+/*Facing problem to highlight the ability titles!!! */
+.ability-title:nth-child(1){
+  color:red !important;
+}
+
+.marks{
+  font-weight:600;
+  color: black;
+}
+
+button{
+  padding: .75rem;
+  margin: .2rem 0;
+  border:none;
+  border-radius: 20px;
+  background-color: rgba(58, 54, 87,1);
+  color: white;
+}
+
+button:hover{
+  background-image: linear-gradient(rgba(110, 67, 240,1), rgba(54, 57, 201,1));;
+}
+
+
+/* for tablet and mobile screens*/
+@media (max-width:600px) {
+  .container{
+    flex-direction: column;
+  }
+}
