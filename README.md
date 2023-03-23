@@ -28,7 +28,7 @@ This goal of this project is to develop a simple webpage having a Results and su
 
 ### Links
 
-- Live Site URL: [Live site URL]()
+- Live Site URL: [Live site URL](https://itachidorri.github.io/results-summary-component/)
 
 ## My process
 1. Build the html structure for the project using the given design as reference.
