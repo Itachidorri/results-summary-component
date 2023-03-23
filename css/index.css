@@ -79,8 +79,10 @@ p{
 
 .score-count{
   background-image: linear-gradient(rgba(54, 57, 201,1), rgba(110, 67, 240,.1));
-  padding: 1rem;
-  width: 6rem;
+  justify-content: center;
+  align-items: center;
+  width:8rem;
+  padding: .5em;
   aspect-ratio: 1/1;
   border-radius: 50%;
 }
@@ -89,6 +91,7 @@ p{
   font-size: 4em;
   color: white;
   font-weight: bold;
+  text-align: center;
 }
 
 .remarks h2{
